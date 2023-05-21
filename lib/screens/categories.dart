@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery/services/utils.dart';
-import 'package:grocery/widgets/categories_widgets.dart';
+import 'package:grocery/widgets/categories_widget.dart';
 import 'package:grocery/widgets/text_widget.dart';
 
 class CategoriesScreen extends StatelessWidget {
