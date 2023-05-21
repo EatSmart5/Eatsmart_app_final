@@ -282,35 +282,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           height: 20,
                         ),
 
-                        TextFormField(
-                          focusNode: _addressFocusNode,
-                          textInputAction: TextInputAction.done,
-                          onEditingComplete: _submitFormOnRegister,
-                          controller: _addressTextController,
-                          validator: (value) {
-                            if (value!.isEmpty || value.length < 10) {
-                              return "Please enter a valid  address";
-                            } else {
-                              return null;
-                            }
-                          },
-                          style: const TextStyle(color: Colors.white),
-                          maxLines: 2,
-                          textAlign: TextAlign.start,
-                          decoration: const InputDecoration(
-                            hintText: 'Shipping address',
-                            hintStyle: TextStyle(color: Colors.white),
-                            enabledBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.white),
-                            ),
-                            focusedBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.white),
-                            ),
-                            errorBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: Colors.red),
-                            ),
-                          ),
-                        ),
                       ],
                     ),
                   ),
