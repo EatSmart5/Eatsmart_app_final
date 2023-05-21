@@ -103,7 +103,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                           flex: 6,
                           child: FittedBox(
                             child: TextWidget(
-                              text: productModel.isPiece ? 'Piece' : 'PC',
+                              text: productModel.isPiece ? 'Piece' : '1PC',
                               color: color,
                               textSize: 20,
                               isTitle: true,
@@ -119,8 +119,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                             child: TextFormField(
                               controller: _quantityTextController,
                               key: const ValueKey('10'),
-                              style: TextStyle(color: color, fontSize: 18),
-                              keyboardType: TextInputType.number,
+                              style: TextStyle(color: color, fontSize: 8),
                               maxLines: 1,
                               enabled: true,
                               onChanged: (valueee) {
