@@ -62,7 +62,7 @@ class _OnSaleWidgetState extends State<OnSaleWidget> {
                       Column(
                         children: [
                           TextWidget(
-                            text: productModel.isPiece ? '1Piece' : '1KG',
+                            text: productModel.isPiece ? '1Piece' : '1PC',
                             color: color,
                             textSize: 22,
                             isTitle: true,
